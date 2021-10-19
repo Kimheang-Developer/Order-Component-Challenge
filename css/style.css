@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 20%;
+    margin: 150px 0;
+    box-shadow: 0 6px 34px 0 rgb(0 0 0 / 15%);
+}
+
+.card .card-image img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card .card-body {
+    padding: 28px 25px;
+    text-align: center;
+}
+
+.card .card-body .title {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.card .card-body .description {
+    color: var(--desaturated-blue);
+    margin: 13px;
+    line-height: 23px;
+}
+
+.card .card-body .music-plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    margin: 23px 0;
+}
+
+.card .card-body .music-plan .price-plan h5 {
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.card .card-body .music-plan .price-plan span {
+    color: var(--desaturated-blue);
+}
+
+.card .card-body .music-plan .btn-change {
+    color: var(--bright-blue);
+    font-weight: 600;
+}
+
+.card .card-body .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-body .btn .btn-payment {
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    border-radius: 10px;
+    padding: 14px 0px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 34px 0 rgb(0 0 0 / 15%);
+}
+
+.card .card-body .btn .btn-cancel {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.card .card-body .btn .btn-cancel:hover {
+    color: var(--dark-blue);
+}
